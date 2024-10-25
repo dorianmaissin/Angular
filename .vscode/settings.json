@@ -1,0 +1,26 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "test_project/package-lock.json": true,
+        "test_project/.gitignore": true,
+        "test_project/.vscode": true,
+        "test_project/angular.json": true,
+        "test_project/tsconfig.app.json": true,
+        "test_project/tsconfig.json": true,
+        "test_project/tsconfig.spec.json": true
+    },
+    "hide-files.files": [
+        "test_project/package-lock.json",
+        "test_project/.gitignore",
+        "test_project/.vscode",
+        "test_project/angular.json",
+        "test_project/tsconfig.app.json",
+        "test_project/tsconfig.json",
+        "test_project/tsconfig.spec.json"
+    ]
+}
