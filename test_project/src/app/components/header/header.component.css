@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: black ;
+}
+
+ul {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 50px;
+    padding: 25px 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
