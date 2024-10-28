@@ -1,0 +1,26 @@
+<div class="wrapper">
+    <div class="body-container">
+        <div class="article-container">
+            <div class="art-wrapper" *ngFor="let article of articles">
+                <app-card *ngIf="article.hide === false" [article]="article" (art-choice)="buySignal($event)" (hide)="hideArticle($event)"></app-card>
+            </div>
+        </div>
+        <div class="backet-container">
+            <div class="basket">
+                <h6>Your basket:</h6>
+                <div *ngFor="let item of baskets" class="art-backet">
+                    <p> {{item.name}}</p>
+                    <div class="item-container">
+    
+                        <p>{{item.price}} $</p>
+                    </div>
+                    <button (click)="removeItem(item.id)">Remove item</button>
+                    <button>+</button>
+                    <button>-</button>
+            </div>
+                <h6>Total: {{total}}</h6>
+            </div>
+        </div>
+    </div>    
+</div>
+

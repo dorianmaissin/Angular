@@ -21,7 +21,13 @@
         "exo1/package-lock.json": true,
         "exo1/package.json": true,
         "exo1/.vscode": true,
-        "exo1/node_modules": true
+        "exo1/node_modules": true,
+        "e_shop/tsconfig.app.json": true,
+        "e_shop/tsconfig.json": true,
+        "e_shop/tsconfig.spec.json": true,
+        "e_shop/angular.json": true,
+        "e_shop/.editorconfig": true,
+        "e_shop/.vscode": true
     },
     "hide-files.files": [
         "test_project/package-lock.json",
@@ -39,6 +45,12 @@
         "exo1/package-lock.json",
         "exo1/package.json",
         "exo1/.vscode",
-        "exo1/node_modules"
+        "exo1/node_modules",
+        "e_shop/tsconfig.app.json",
+        "e_shop/tsconfig.json",
+        "e_shop/tsconfig.spec.json",
+        "e_shop/angular.json",
+        "e_shop/.editorconfig",
+        "e_shop/.vscode"
     ]
 }

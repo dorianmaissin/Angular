@@ -1,0 +1,8 @@
+<div class="card">
+    <img [src]="article.imgUrl" alt="">
+    <p>{{ article.name }}</p>
+    <p>{{ article.description }}</p>
+    <p>Price: {{article.price}} $ </p>
+    <button (click)="buy(article)">Add To Card</button>
+    <button (click)="hideSignal(article)">Hide</button>
+</div>
