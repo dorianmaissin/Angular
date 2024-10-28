@@ -1,0 +1,5 @@
+<div class="background-img">
+    <div class="container">
+        <app-house-card *ngFor="let house of houses" [house]="house" (ok)="signal($event)"></app-house-card>
+    </div>
+</div>

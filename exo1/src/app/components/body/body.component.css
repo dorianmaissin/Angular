@@ -1,0 +1,17 @@
+.background-img {
+    background-image: url('C:\\Users\\doria\\OneDrive\\Documents\\VsCode\\GitHub\\Angular\\exo1\\public\\im1.jpg');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-items: center;
+}
