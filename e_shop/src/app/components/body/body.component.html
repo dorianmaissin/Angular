@@ -11,7 +11,7 @@
                 <div *ngFor="let item of baskets" class="art-backet">
                     <p> {{item.name}}</p>
                     <div class="item-container">
-    
+                        
                         <p>{{item.price}} $</p>
                     </div>
                     <button (click)="removeItem(item.id)">Remove item</button>

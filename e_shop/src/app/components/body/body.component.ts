@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from '../card/card.component';
 
@@ -10,9 +10,15 @@ import { CardComponent } from '../card/card.component';
   styleUrl: './body.component.css'
 })
 
-export class BodyComponent {
+export class BodyComponent implements OnChanges {
+
+  total : any
+  ngOnChanges(changes: SimpleChanges): void {
+    this.total = this.baskets.reduce((accumulator, item) => accumulator + item.price, 0);
+    console.log(this.total)
+  }
   baskets :any[] = []
-  total : any = this.baskets.reduce((accumulator, item) => accumulator + item.price, 0);
+  
 
   buySignal(para:Object) {
     this.baskets.push(para)
