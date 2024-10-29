@@ -3,6 +3,8 @@ import { Input } from '@angular/core';
 import { Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ItemsService } from '../../services/items.service';
+import { BasketService } from '../../services/basket.service';
 
 @Component({
   selector: 'app-card',
@@ -13,20 +15,12 @@ import { CommonModule } from '@angular/common';
 })
 export class CardComponent {
 
-  buy(para:Object) {
-    this.artChoice.emit(para)
-  }
-
-  hideSignal(para:Object) {
-    this.hide.emit(para)
-  }
+  constructor(
+    public items: ItemsService,
+    public basket: BasketService
+  ) {}
 
   @Input()
   article: any;
 
-  @Output("art-choice")
-  artChoice = new EventEmitter()
-
-  @Output("hide")
-  hide = new EventEmitter()
 }

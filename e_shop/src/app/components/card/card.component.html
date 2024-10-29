@@ -3,6 +3,6 @@
     <p>{{ article.name }}</p>
     <p>{{ article.description }}</p>
     <p>Price: {{article.price}} $ </p>
-    <button (click)="buy(article)">Add To Card</button>
-    <button (click)="hideSignal(article)">Hide</button>
+    <button (click)="this.basket.buySignal(article)">Add To Card</button>
+    <button (click)="this.items.handleHide(article)">Hide</button>
 </div>
