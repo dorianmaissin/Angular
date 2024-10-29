@@ -27,7 +27,13 @@
         "e_shop/tsconfig.spec.json": true,
         "e_shop/angular.json": true,
         "e_shop/.editorconfig": true,
-        "e_shop/.vscode": true
+        "e_shop/.vscode": true,
+        "crypto/.vscode": true,
+        "crypto/tsconfig.app.json": true,
+        "crypto/tsconfig.json": true,
+        "crypto/tsconfig.spec.json": true,
+        "crypto/angular.json": true,
+        "crypto/.editorconfig": true
     },
     "hide-files.files": [
         "test_project/package-lock.json",
@@ -51,6 +57,12 @@
         "e_shop/tsconfig.spec.json",
         "e_shop/angular.json",
         "e_shop/.editorconfig",
-        "e_shop/.vscode"
+        "e_shop/.vscode",
+        "crypto/.vscode",
+        "crypto/tsconfig.app.json",
+        "crypto/tsconfig.json",
+        "crypto/tsconfig.spec.json",
+        "crypto/angular.json",
+        "crypto/.editorconfig"
     ]
 }

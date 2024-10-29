@@ -1,0 +1,6 @@
+<h1>Your current wallet is {{this.wallet.wallet}} $</h1>
+<h2>Your position size is {{this.wallet.position}} $</h2>
+
+<ul *ngFor="let asset of this.wallet.assets" >
+    <li>{{asset}} btc</li>
+</ul>

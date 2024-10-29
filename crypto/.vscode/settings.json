@@ -1,0 +1,28 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        ".editorconfig": true,
+        "angular.json": true,
+        "tsconfig.app.json": true,
+        "tsconfig.json": true,
+        "tsconfig.spec.json": true,
+        ".vscode": true,
+        "src/app/app.config.ts": true,
+        "src/app/app.routes.ts": true
+    },
+    "hide-files.files": [
+        ".editorconfig",
+        "angular.json",
+        "tsconfig.app.json",
+        "tsconfig.json",
+        "tsconfig.spec.json",
+        ".vscode",
+        "src/app/app.config.ts",
+        "src/app/app.routes.ts"
+    ]
+}
