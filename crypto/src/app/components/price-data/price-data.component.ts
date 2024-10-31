@@ -14,4 +14,10 @@ export class PriceDataComponent {
     public wallet : WalletService,
     public priceData : CrypoPriceService
   ) {}
+
+  callBtcPrice() {
+    this.priceData.fetchData().subscribe((data) => {
+      console.log(data)
+    })
+  }
 }

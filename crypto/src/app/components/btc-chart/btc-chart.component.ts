@@ -27,12 +27,17 @@ export class BtcchartComponent {
   buffer : any[] = [];
   option: EChartsOption = {};
 
-  constructor(public bitcoin: CrypoPriceService) { }
+  constructor(public bitcoin: CrypoPriceService) {
+    
+    this.bitcoin.$value.subscribe((value) => {
+        this.buffer.push({ date: new Date(value[0]).toLocaleDateString(), price: value[4] })
+        this.update(value[4])
+        console.log(this.buffer)
+    })
+  }
 
-  ngOnInit(): void {
-
-  this.buffer = this.bitcoin.bitcoinData;
-
+  update(value:any)
+  {
     this.option = {
         title: {
             text: 'Bitcoin Price Over Time',
@@ -53,13 +58,15 @@ export class BtcchartComponent {
         xAxis: {
             type: 'category',
             boundaryGap: false,
-            data: this.buffer.map(item => item[0])
+            data: this.buffer.map(item => item.date)
         },
         yAxis: {
             type: 'value',
             axisLabel: {
                 formatter: '{value} $'
             },
+            min: value -1,
+            max: value +1,
             axisPointer: {
                 snap: true
             }
@@ -80,7 +87,7 @@ export class BtcchartComponent {
                 name: 'Bitcoin Price',
                 type: 'line',
                 smooth: true,
-                data: this.buffer.map(item => item[4]),
+                data: this.buffer.map(item => item.price),
                 markArea: {
                     itemStyle: {
                         color: 'rgba(255, 173, 177, 0.4)'
@@ -89,7 +96,7 @@ export class BtcchartComponent {
             }
         ]
     };
+  }
 
-}
 }
 

@@ -12,7 +12,6 @@
         "tsconfig.json": true,
         "tsconfig.spec.json": true,
         ".vscode": true,
-        "src/app/app.config.ts": true,
         "src/app/app.routes.ts": true
     },
     "hide-files.files": [
@@ -22,7 +21,6 @@
         "tsconfig.json",
         "tsconfig.spec.json",
         ".vscode",
-        "src/app/app.config.ts",
         "src/app/app.routes.ts"
     ]
 }
